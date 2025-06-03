@@ -39,6 +39,11 @@
                             <div class="row">
                                 <!-- Left Column: User Info -->
                                 <div class="col-md-7">
+                                    <div class="col-md-5 text-center">
+                                    <label for="image" class="form-label">Profile Image</label>
+                                    <input type="file" name="image" class="form-control mb-3" required onchange="previewImage(event)">
+                                    <img id="preview" src="https://via.placeholder.com/150" class="img-thumbnail img-preview" alt="Preview">
+                                    </div>
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Full Name</label>
                                         <input type="text" name="name" class="form-control" placeholder="Enter full name" required>
@@ -63,13 +68,6 @@
                                         <label for="confirm_password" class="form-label">Confirm Password</label>
                                         <input type="password" name="confirm_password" class="form-control" placeholder="Repeat password" required>
                                     </div>
-                                </div>
-
-                                <!-- Right Column: Profile Image -->
-                                <div class="col-md-5 text-center">
-                                    <label for="image" class="form-label">Profile Image</label>
-                                    <input type="file" name="image" class="form-control mb-3" required onchange="previewImage(event)">
-                                    <img id="preview" src="https://via.placeholder.com/150" class="img-thumbnail img-preview" alt="Preview">
                                 </div>
                             </div>
 
